@@ -1,2 +1,4 @@
 # express-mongo-rest-goal
-A simple EN app that uses REST API to store goals. Following Traversy Media.
+
+A simple Express / Mongo app that uses REST API to store goals. Following Traversy Media.
+Created by lilKriT.

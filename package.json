@@ -1,0 +1,19 @@
+{
+  "name": "express-mongo-rest-goal",
+  "version": "1.0.0",
+  "description": "An app for setting goals. Made in Express.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilKriT/express-mongo-rest-goal.git"
+  },
+  "author": "lilKriT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilKriT/express-mongo-rest-goal/issues"
+  },
+  "homepage": "https://github.com/lilKriT/express-mongo-rest-goal#readme"
+}
