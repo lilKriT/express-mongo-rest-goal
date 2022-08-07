@@ -10,7 +10,9 @@ const Goal = require("../models/goalModel");
 // @acccess Private
 const getGoals = asyncHandler(async (req, res) => {
   //   res.send("Get Goals");    simple
-  res.status(200).json({ message: "Get goals" });
+  const goals = await Goal.find();
+
+  res.status(200).json(goals);
   //   you don't have to add the status manually, but you can
 });
 
@@ -25,7 +27,12 @@ const setGoal = asyncHandler(async (req, res) => {
     throw new Error("Please add a text field"); // this will also cause issues, you need more middleware
   }
 
-  res.status(200).json({ message: "Set goals" });
+  // else
+  const goal = await Goal.create({
+    text: req.body.text,
+  });
+
+  res.status(200).json(goal);
 });
 
 // @desc Update Goal
