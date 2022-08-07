@@ -1,6 +1,8 @@
 // need to download express-async-handler for this
 const asyncHandler = require("express-async-handler");
 
+const Goal = require("../models/goalModel");
+
 // This is some descriptive commenting
 
 // @desc Get Goals
