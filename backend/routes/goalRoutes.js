@@ -7,12 +7,13 @@ const {
   deleteGoal,
 } = require("../controllers/goalController");
 
-router.get("/", getGoals);
+// router.get("/", getGoals);
+// router.post("/", setGoal);
+router.get("/", getGoals).post("/", setGoal); // this saves a line!
+// it only works because they have the same route
 
-router.post("/", setGoal);
-
-router.put("/:id", updateGoal);
-
-router.delete("/:id", deleteGoal);
+// router.put("/:id", updateGoal);
+// router.delete("/:id", deleteGoal);
+router.put("/:id", updateGoal).delete("/:id", deleteGoal); //same here
 
 module.exports = router;
