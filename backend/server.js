@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // because of this line, we don't need full path in goalRoutes.js
 app.use("/api/goals", require("./routes/goalRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
 
 // overriding the error handler
 app.use(errorHandler);
