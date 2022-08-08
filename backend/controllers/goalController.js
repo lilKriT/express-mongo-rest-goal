@@ -10,7 +10,7 @@ const Goal = require("../models/goalModel");
 // @acccess Private
 const getGoals = asyncHandler(async (req, res) => {
   //   res.send("Get Goals");    simple
-  const goals = await Goal.find();
+  const goals = await Goal.find({ user: req.user.id });
 
   res.status(200).json(goals);
   //   you don't have to add the status manually, but you can
