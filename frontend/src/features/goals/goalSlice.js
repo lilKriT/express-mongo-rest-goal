@@ -8,6 +8,15 @@ const initialState = {
   message: "",
 };
 
+// Create new goal
+export const createGoal = createAsyncThunk(
+  "goals/create",
+  async (goalData, thunkAPI) => {
+    try {
+    } catch (error) {}
+  }
+);
+
 export const goalSlice = createSlice({
   name: "goal",
   initialState,
